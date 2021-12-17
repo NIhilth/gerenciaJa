@@ -28,4 +28,8 @@ export class TelaPrincipalComponent implements OnInit {
   irPedidos(){
     this.router.navigate(['../pedido/'])
   }
+
+  voltar(){
+    this.router.navigate([''])
+  }
 }

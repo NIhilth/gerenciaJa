@@ -1,14 +1,17 @@
 <div id="tudo">
   <div id="container-login">
-    <div>
-      <span>Login</span>
+    <div class="login">
+      <div style="margin-top: 20px;">
+        <h1>Login</h1>
+      </div>
+      <div>
+        <input type="text" placeholder="Nome" class="cadastrar" [(ngModel)]="nome">
+        <input type="text" placeholder="Sobrenome" class="cadastrar" [(ngModel)]="sobrenome">
+      </div>
+      <div style="margin-top: 15px;">
+        <button (click)="VerEFicar()">Logar</button>
+      </div>
     </div>
-    <div>
-      <input type="text" placeholder="Nome" class="cadastrar" [(ngModel)]="nome">
-      <input type="text" placeholder="Sobrenome" class="cadastrar" [(ngModel)]="sobrenome">
-    </div>
-    <div>
-      <button (click)="VerEFicar()">Logar</button>
-    </div>
+
   </div>
 </div>

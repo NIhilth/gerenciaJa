@@ -1,16 +1,22 @@
 <div id="tudo">
   <div id="container-login">
-    <div>
-      <h1>Páginas</h1>
+    <div class="login">
+      <div style="margin-top: 30px;">
+        <h1>Páginas</h1>
+      </div>
+      <div class="cadastrar">
+        <button (click)="irProdutos()">Produtos</button>
+      </div>
+      <div class="cadastrar">
+        <button (click)="irCliente()">Clientes</button>
+      </div>
+      <div class="cadastrar">
+        <button (click)="irPedidos()">Pedidos</button>
+      </div>
+      <div class="cadastrar" style="margin-top: 15px;">
+        <button (click)="voltar()">Voltar para Login</button>
+      </div>
     </div>
-    <div class="cadastrar">
-      <button (click)="irProdutos()">Produtos</button>
-    </div>
-    <div class="cadastrar">
-      <button (click)="irCliente()">Clientes</button>
-    </div>
-    <div class="cadastrar">
-      <button (click)="irPedidos()">Pedidos</button>
-    </div>
+
   </div>
 </div>
