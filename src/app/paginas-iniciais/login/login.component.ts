@@ -9,11 +9,18 @@ import { Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
+  nome = ""
+  sobrenome = ""
+
   constructor(
     private router: Router
   ) { }
 
   ngOnInit() {
+  }
+
+  VerEFicar(){
+
   }
 
 }
