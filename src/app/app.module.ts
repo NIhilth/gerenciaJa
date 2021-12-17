@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { CommonModule} from '@angular/common'
 
 import { LoginComponent } from './paginas-iniciais/login/login.component'
+import { TelaPrincipalComponent } from './paginas-iniciais/tela-principal/tela-principal.component'
 import { ClienteModule } from './cliente/cliente.module'
 import { ProdutoModule } from './produto/produto.module'
 import { PedidoModule } from './pedido/pedido.module'
@@ -16,13 +17,18 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     LoginComponent,
-    CheckLogComponent
+    CheckLogComponent,
+    TelaPrincipalComponent
   ],
   imports: [
     RouterModule.forRoot([
       {
         path: '',
         component: LoginComponent
+      },
+      { 
+        path: 'tela-principal', 
+        component: TelaPrincipalComponent
       }
     ]),
     BrowserModule,

@@ -24,13 +24,19 @@ export class LoginComponent implements OnInit {
   }
 
   VerEFicar() {
+    let checar
     for (let i = 0; i < this.lista.length; i++) {
       if (this.nome == this.lista[i].nome && this.sobrenome == this.lista[i].sobrenome) {
-        this.router.navigate(['../paginas-iniciais/tela-principal'])
+        checar = true
       } else {
-        console.log("Num deu")
+        checar = false
       }
     }
 
+    if(checar = true){
+      this.router.navigate(['/tela-principal/'])
+    } else {
+      alert("Pessoa não cadastrada")
+    }
   }
 }

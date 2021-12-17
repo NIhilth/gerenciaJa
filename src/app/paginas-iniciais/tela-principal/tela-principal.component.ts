@@ -17,4 +17,15 @@ export class TelaPrincipalComponent implements OnInit {
   ngOnInit() {
   }
 
+  irProdutos(){
+    this.router.navigate(['../produto/'])
+  }
+
+  irCliente(){
+    this.router.navigate(['../cliente/'])
+  }
+
+  irPedidos(){
+    this.router.navigate(['../pedido/'])
+  }
 }
