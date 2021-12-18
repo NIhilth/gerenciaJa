@@ -25,11 +25,13 @@
     from {
         width: 180px;
         height: 180px;
+        border-radius:120px
     }
 
     to {
         width: 210px;
         height: 210px;
+        border-radius:150px
     }
 }
 
@@ -42,7 +44,7 @@
     border-radius: 120px;
 }
 
-.login button:checked{
+.login #botao:after:checked{
     animation-name: MudarTamanho;
     animation-duration: 3s;
 }
