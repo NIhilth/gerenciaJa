@@ -44,7 +44,7 @@
     border-radius: 120px;
 }
 
-.login #botao:after:checked{
+.login #botao:checked{
     animation-name: MudarTamanho;
     animation-duration: 3s;
 }
