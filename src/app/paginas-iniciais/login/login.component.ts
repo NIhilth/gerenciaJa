@@ -35,7 +35,8 @@ export class LoginComponent implements OnInit {
     }
 
     if(checar == true){
-      setTimeout(() => {this.router.navigate(['/tela-principal/']); }, 3000);
+      //setTimeout(() => {this.router.navigate(['/tela-principal/']); }, 3000);
+      this.router.navigate(['/tela-principal/'])
     } else {
       alert("Pessoa não cadastrada")
     }

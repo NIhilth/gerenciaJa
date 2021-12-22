@@ -17,8 +17,7 @@
 }
 
 .cadastrar{
-    margin-top: 7.5px;
-    margin-bottom: 7.5px;
+    margin: 7.5px; 
 }
 
 .login{
@@ -28,4 +27,11 @@
     width: 210px;
     height: 210px;
     border-radius: 150px;
+}
+
+#botoes{
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
 }
