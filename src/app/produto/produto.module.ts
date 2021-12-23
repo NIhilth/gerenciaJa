@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ListaProdutosComponent } from './lista-produtos/lista-produtos.component';
 import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto.component';
 
-import { RouterModule} from '@angular/router'
+import { RouterModule} from '@angular/router';
 
 @NgModule({
   imports: [

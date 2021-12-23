@@ -11,14 +11,21 @@
     height: 300px;
     padding: 15px;
     border-radius: 15px;
-    background: rgb(2, 0, 36);
-    background: radial-gradient(circle, rgba(2, 0, 36, 1) 30%, rgba(9, 9, 121, 1) 50%, rgba(0, 0, 0, 1) 70%);
     text-align: center;
 }
 
 .cadastrar {
     margin-top: 7.5px;
     margin-bottom: 7.5px;
+}
+
+.login {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    width: 210px;
+    height: 270px;
+    border-radius: 30px;
 }
 
 /*
@@ -36,14 +43,7 @@
     }
 }*/
 
-.login {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    width: 210px;
-    height: 210px;
-    border-radius: 150px;
-}
+
 
 /*
 .login #botao:checked{
