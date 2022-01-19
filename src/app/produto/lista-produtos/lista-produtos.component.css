@@ -15,23 +15,40 @@
     height: 390px;
     padding: 15px;
     border-radius: 15px;
-    background: rgb(2, 0, 36);
-    background: radial-gradient(circle, rgba(2, 0, 36, 1) 30%, rgba(9, 9, 121, 1) 50%, rgba(0, 0, 0, 1) 70%);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #produtos{
-    background-color: white;
     margin-bottom: 7.5px;
     text-align: center;
+    border-radius: 30px;
     padding: 20px;
-    border-radius: 180px;
-    width: 300px;
-    height:300px;
+    width:90vw;
+    height: 90vh;
 }
 
-#produto{
-    margin: 10px 0px;
+#titulo{
+    background-color: white;
+    padding: 5px;
+    border-radius: 30px;
+    width: 200px;
+    margin-left: 70px;
+    margin-top: 15px;
+}
+
+.produto{
+    background-color: white;
+    padding: 15px;
+    border-radius: 30px;
+    margin-left: 60px;
+    margin-top: 7.5px;
+    width: 200px;
+}
+
+.botoes{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
 }

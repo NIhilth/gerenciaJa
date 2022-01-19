@@ -1,16 +1,22 @@
 <div id="container-produtos">
   <div class="lista">
-    <div id="produtos"> 
-      <h1>Produtos</h1>
-      <div *ngFor="let produto of listaProdutos" id="produto">
+    <div id="produtos">
+      <div id="titulo">
+        <h1>Produtos</h1>
+      </div>
+      <div *ngFor="let produto of listaProdutos" class="produto">
         <div>
           <div>
             {{produto.nome}}
           </div>
         </div>
-        <div>
-          <button>Ver Produto</button>
+        <div class="botoes">
+          <button (click) = "verProduto(produto.numero)">Ver Produto</button>
+          <button>Editar Produto</button>
         </div>
+      </div>
+      <div id="titulo">
+        <button>Adicionar Produto</button>
       </div>
     </div>
   </div>

@@ -1,4 +1,5 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, Output, EventEmitter} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-lista-produtos',
@@ -8,16 +9,25 @@ import { Component, OnInit} from '@angular/core';
 export class ListaProdutosComponent implements OnInit {
 
   listaProdutos = [
-    {nome: 'Barra de chocolate', valor: 5.99}, 
-    {nome: 'Amendoim confeitado', valor: 8.50}, 
-    {nome: 'Chocotone', valor: 25.90}, 
-    {nome: 'Pacote de balas', valor: 6.99}, 
-    {nome: 'Pé de Moleque', valor: 3.50}, 
+    {numero: 1, nome: 'Barra de chocolate', valor: 5.99}, 
+    {numero: 2, nome: 'Amendoim confeitado', valor: 8.50}, 
+    {numero: 3, nome: 'Chocotone', valor: 25.90}, 
+    {numero: 4, nome: 'Pacote de balas', valor: 6.99}, 
+    {numero: 5, nome: 'Pé de Moleque', valor: 3.50}, 
   ]
 
-  constructor() { }
+  @Output() valor = new EventEmitter()
 
-  ngOnInit() {
+  constructor(
+    private router: Router
+  ) { }
+
+  ngOnInit(){
+  }
+
+  verProduto(produto){
+    this.valor.emit(this.listaProdutos[produto - 1])
+    this.router.navigate(['/produto/',produto])
   }
 
 }
