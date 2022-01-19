@@ -34,4 +34,6 @@ export class ProdutoComponent implements OnInit {
     console.log(this.info)
   }
 
+  @Input() receivedValue: String;
+
 }

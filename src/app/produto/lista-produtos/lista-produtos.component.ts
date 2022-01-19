@@ -23,11 +23,14 @@ export class ListaProdutosComponent implements OnInit {
   ) { }
 
   ngOnInit(){
+    this.parentName = "Kindson the Genius"
   }
 
   verProduto(produto){
     this.valor.emit(this.listaProdutos[produto - 1])
     this.router.navigate(['/produto/',produto])
   }
+
+  parentName
 
 }
