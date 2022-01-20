@@ -27,11 +27,9 @@ export class ProdutoComponent implements OnInit {
   }
 
   receberValor(valores) {
-    console.log(valores)
     this.info.numero = valores.numero;
     this.info.nome = valores.nome;
     this.info.valor = valores.valor;
-    console.log(this.info)
   }
 
   @Input() receivedValue: String;
