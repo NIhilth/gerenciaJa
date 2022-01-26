@@ -10,28 +10,29 @@ export class ProdutoComponent implements OnInit {
 
   idProduto
 
-  info = {
-    numero: 0,
-    nome: '',
-    valor: 0.0
-  }
+  numero
+  nome
+  valor
+
 
   constructor(
     private route: ActivatedRoute,
     private router: Router
   ) {
     this.idProduto = route.snapshot.paramMap.get('codigo')
+    this.nome = route.snapshot.paramMap.get('nome');
+    this.valor = route.snapshot.paramMap.get('valor');
   }
 
   ngOnInit() {
   }
 
-  receberValor(valores) {
+  /* receberValor(valores) {
     this.info.numero = valores.numero;
     this.info.nome = valores.nome;
     this.info.valor = valores.valor;
   }
 
-  @Input() receivedValue: String;
+  @Input() receivedValue: String; */
 
 }

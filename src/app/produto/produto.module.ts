@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListaProdutosComponent } from './lista-produtos/lista-produtos.component';
 import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto.component';
-import { ProdutoComponent } from './lista-produtos/produto/produto.component';
+import { ProdutoComponent } from './produto/produto.component';
 
 import { RouterModule} from '@angular/router';
 

@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter} from '@angular/core';
+import { Component, OnInit/* , Output, EventEmitter */} from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -16,8 +16,8 @@ export class ListaProdutosComponent implements OnInit {
     {numero: 5, nome: 'Pé de Moleque', valor: 3.50}
   ]
 
-  @Output() valor = new EventEmitter<object>()
-
+  /* @Output() valor = new EventEmitter<object>()
+ */
   constructor(
     private router: Router
   ) { }
@@ -26,7 +26,7 @@ export class ListaProdutosComponent implements OnInit {
   }
 
   verProduto(produto){
-    this.valor.emit(this.listaProdutos[produto - 1])
+    /* this.valor.emit(this.listaProdutos[produto - 1]) */
     this.router.navigate(['/produto/',produto])
   }
 
