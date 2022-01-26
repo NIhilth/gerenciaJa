@@ -12,7 +12,7 @@ import { RouterModule} from '@angular/router';
       {path: 'produto', children:[
         {path: '', component: ListaProdutosComponent},
         {path: ':codigo', component: ProdutoComponent},
-        {path: 'cadastrar-produto', component: CadastrarProdutoComponent}
+       /*  {path: 'cadastrar-produto', component: CadastrarProdutoComponent} */
       ]}
     ]),
     CommonModule

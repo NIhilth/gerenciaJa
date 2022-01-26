@@ -8,9 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ProdutoComponent implements OnInit {
 
-  idProduto
-
-  numero
+  codigo
   nome
   valor
 
@@ -19,9 +17,10 @@ export class ProdutoComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router
   ) {
-    this.idProduto = route.snapshot.paramMap.get('codigo')
+    this.codigo = route.snapshot.paramMap.get('codigo')
     this.nome = route.snapshot.paramMap.get('nome');
     this.valor = route.snapshot.paramMap.get('valor');
+    console.log(this.codigo,this.nome, this.valor)
   }
 
   ngOnInit() {
